@@ -1,0 +1,36 @@
+Q1
+program sum 
+read A
+read B
+sum = A+B
+print sum
+
+Q2
+program print even number
+ i=2
+for (i=2;i<=100;i=i+2)
+print i
+endforloop
+
+Q3.
+funtion leapyear
+read A
+ if A%4=0
+print "A is leap year"
+else print"A is not leap year" 
+
+Q4
+read A
+A=A*0.621
+print A
+
+Q5
+read A
+if (A%7=0 or A%10=7)
+print"A is buzz number"
+else
+print" A is not buzz numnber"
+
+Q6
+read A
+for()
