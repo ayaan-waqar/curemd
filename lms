@@ -1,0 +1,83 @@
+using System;
+
+namespace librarymanagement
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book mybook = new Book();
+            Library l = new Library();
+            l.AddBook(mybook);
+            Console.WriteLine("Hello World!");
+        }
+    }
+
+    public class Book
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public int BookID { get; set; }
+
+        public Book(string title, string author, int bookid)
+        {
+            Title = title;
+            Author = author;
+            BookID = bookid;
+        }
+
+        public void displayinfo() 
+        {
+            Console.WriteLine("Title:" + Title);
+            Console.WriteLine("Author:"+ Author);
+            Console.WriteLine("Book ID :"+ BookID);
+        }
+
+    }
+
+    public class Person 
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int PersonID { get; set; }
+
+        public Person(string name, int age, int personid)
+        {
+            Name = name;
+            Age = age;
+            PersonID = personid;
+        }
+
+    }
+
+    public class Library
+    {
+        public string LibraryName { get; set; }
+        public int LibraryID { get; set; }
+        public List<Book> Booklist { get; set; }
+
+        public Library(string libraryname, int libraryid)
+        {
+            LibraryName = libraryname;
+            LibraryID = libraryid;
+            Booklist = new List<Book>();
+        }
+
+        public void AddBook(Book book) 
+        {
+            Booklist.Add(book);
+            Console.WriteLine(
+
+        }
+
+        public void RemoveBook() 
+        {
+
+        }
+
+        public void ViewBooks() 
+        {
+
+        }
+
+    }
