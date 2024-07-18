@@ -1,0 +1,19 @@
+table,th,td{
+    border: 5px solid;
+    background-color:aquamarine;
+    align-items: center;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+#main{
+    align-content: center;
+    align-items: center;
+    padding-left: 40 px;
+    padding-right: 40 px;
+    background-color: aqua;
+}
